@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+*.egg-info/
+# local outputs and logs
+outputs/
+logs/
+*.log
+*.flag
+# never commit credentials or local image copies
+*.pem
+*cookies*
+.env
+UAV3D/

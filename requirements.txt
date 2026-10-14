@@ -1,0 +1,18 @@
+# Versions taken from `pip freeze` on the machine that produced the paper's
+# open-model and Bedrock results: Python 3.13, CUDA 13.0, 1x NVIDIA A10G (24 GB).
+#
+# torch/torchvision were the CUDA 13.0 builds (2.12.1+cu130 / 0.27.1+cu130).
+# Install them from the PyTorch index that matches your CUDA version, e.g.
+#   pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cu130
+torch==2.12.1
+torchvision==0.27.1
+transformers==5.17.0
+accelerate==1.15.0
+bitsandbytes==0.50.2      # 4-bit loading of Qwen2-VL (default in Qwen2VLWrapper)
+qwen-vl-utils==0.0.14
+Pillow==12.3.0
+numpy==2.3.5
+
+# Optional: API models in the model registry (not covered by the README).
+# anthropic==1.6.0
+# openai>=1.0
